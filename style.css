@@ -410,9 +410,8 @@ footer img{
     
     .nav-menu{
         z-index: 250;
-        display: flex;
         color: #ffffff;
-        display: flex;
+        display: none;
         position: fixed;
         flex-direction: row;
         top: 2.5rem;
