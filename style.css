@@ -207,6 +207,10 @@ nav a:hover{
     align-items: center;
     justify-content: space-between;
 }
+
+.cert-1 img{
+    width: 250px;
+}
 .about-me .certification .skills .circle{
     height: 100px;
     width: 100px;
