@@ -1,0 +1,652 @@
+*{
+    margin: o;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+body{
+    text-align: right;
+    color: #ffffff;
+    font-family: "Bebas Neue";
+    background: #000;
+}
+
+nav .button-nav{
+    position: relative;
+    top: 1px;
+    right: 1px;}
+nav .button-nav button{
+    display: none; 
+
+}
+nav .button-nav button i{
+    font-size: 35px;
+    color: #ffffff;
+}
+
+
+
+
+
+
+.main-nav{
+    width: 100%;
+    box-shadow: 0 -8px 26.2px #B336FF;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-right: 50px;
+}
+
+#logo{
+    color: #B336FF;
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    column-gap: 20px;
+    list-style-type: none;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.4s;
+}
+nav a:hover{
+    color: #B336FF;
+}
+
+.light-bulb{
+    width: 60px;
+    height: 222px;
+    position: absolute;
+}
+.light-bulb img{
+    position: absolute;
+    left: 350px;
+    /* left: 400px;
+    bottom: 311px; */
+}
+.light-mode{
+    /* position: absolute; */
+}
+.light-mode img{
+    position: absolute;
+    left: 469px;
+    top: 250px;
+}
+
+.introduction-txt span{
+    color: #ffffff;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    /* margin-top: 150px; */
+    align-items: center;
+}
+.hero img{
+    margin-top: 40px;
+}
+.hero .introduction-txt{
+    padding-left: 100px;
+    margin-right: 50px;
+}
+.hero .introduction-txt .my-title{
+    font-family: "caveat";
+    font-size: 67px;
+}
+.hero .introduction-txt p{
+    margin-top: 0;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.hero .introduction-txt h1{
+    margin: 40px 0 0 0px;
+    font-size: 90px;
+    color: #B336FF;
+}
+.social{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.social .social-icons i{
+    background: none;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+.social .social-icons{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+
+}
+.social .download button{
+    width: 120px;
+    height: 35px;
+    background: transparent;
+    box-shadow: 0 2px 10px #B336FF;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.social .download button:hover{
+    box-shadow: 0 4px 20px #B336FF;   
+}
+.social .download button i{
+    color: #ffffff;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+.social .social-icons i:hover{
+    box-shadow: 0 4px 20px #ffffff;
+    background: rgba(255, 255, 255, 0.4); 
+    
+}
+
+.arrow-down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+
+}
+
+.arrow-down:hover{
+    transform: scaleY(2);
+    
+}
+.arrow-down img:hover{
+    box-shadow: 1px -2px 25px #ffffff;
+    border-radius: 50%;
+}
+.about-me{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.about-me .certification{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.about-me .certification .cert{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-me .certification .skills .circle{
+    height: 100px;
+    width: 100px;
+    background: transparent;
+    margin-top: 150px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 25px #B336FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about{
+    margin-bottom: 60px;
+}
+
+
+.about-me .certification, .my-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.about-me .qualification{
+    /* padding-top: 120px; */
+    text-align: center;
+}
+.about-me .qualification .my-qual-img{
+    margin-left: -30px;
+}
+
+.my-profile img{
+    width: 400px;
+    border-radius: 150px;
+    filter: blur(5px);
+    transition: 0.6s;
+}
+.my-profile img:hover{
+    border-radius: 0;
+    filter: blur(0px);
+}
+.about-me .qualification h2{
+    text-decoration: underline;
+    font-size: 32px;
+}
+.about-me .qualification h3{
+    font-size: 20px;
+}
+.about-me .qualification p{
+    font-size: 15px;
+}
+.about-me .qualification h2, h3{
+    margin: 0;
+}
+.hobby{
+    margin-top: 50px;
+}
+.dividor .divid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20PX;
+}
+.dividor .line{
+    background: #ffffff;
+    height: 0.5px;
+    margin-top: 1px;
+    width: 100%;
+}
+
+.contact-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.contact{
+    padding-left: 70px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 720px;
+    height: 450px;
+    align-items: center;
+    justify-content: center;       
+    text-align: left;
+    box-shadow: 1px 2px 25px #ffffff;
+
+}
+
+.contact input{
+    background: transparent;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+.contact input{
+    margin-bottom: 50px;
+}
+
+
+.contact-left input[type="submit"]{
+    display: block;
+    margin-bottom: 0;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #ffffff;
+    padding: 6px 20px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.contact-left input[type="submit"]:hover{
+    background: #ffffff;
+    color: #000000;
+}
+.contact-right .social-icons{
+    margin-top: 20px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-right .social-icons i:hover{
+    box-shadow: 0 4px 20px #ffffff;
+    border-radius: 50%;
+} 
+.contact-right textarea{
+    border-top-right-radius: 20px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: "Open Sans";
+    font-size: 17px;
+    font-weight: 500;
+
+}
+
+.contact-right textarea::placeholder{
+    font-weight: "Open Sans";
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    box-shadow: 1px -2px 25px #ffffff;
+    margin-top: 100px;position: relative;
+    bottom: 0;
+}
+footer img{
+    margin-left: 10px;
+    width: 20px;
+}
+
+
+
+
+
+.thankyou{
+    display: flex;
+    /* align-items: center; */
+    text-align: center;
+}
+.thankyou h1, p{
+    font-family: "Bebas Neue";
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1065px){
+
+    nav .button-nav button{
+        display: inline-block;
+        cursor: pointer;
+        background: transparent;
+    }
+    nav .button-nav #close-nav{
+        display: none;
+    }
+    
+    
+    
+    
+    
+    
+    .nav-menu{
+        z-index: 250;
+        display: flex;
+        color: #ffffff;
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        top: 2.5rem;
+        right: 2%;
+        height: fit-content;
+        width: 25rem;
+        flex-direction: column;
+        gap: 0;
+        border-radius: 10px;
+        background-color: #2626c4;
+        padding-bottom: 20px;
+        padding: 50px 0;
+        
+    }
+
+    .nav-menu li{
+        margin-top: 30px;
+        
+    }
+    nav{
+        margin-right: 0px;
+    }
+
+    .light-bulb img{
+        left: 170px;
+        height: 300px;
+    }
+    .light-mode img{
+        left: 260px;
+        top: 220px;
+    }
+c
+
+
+    .hero{
+        grid-template-columns: 100px 1fr;
+    }
+    .hero img{
+        margin-top: 30px;
+        width: 250px;
+
+    }
+    .hero .introduction-txt .my-title{
+        font-size: 57px;
+    }
+    .hero .introduction-txt h1{
+        font-size: 40px;
+    }
+
+    .hero .introduction-txt p{
+        margin-left: 30px;
+        text-align: center;
+    }
+    .social .download button{
+        width: 120px;
+        height: 30px;
+        font-size: 14px;
+
+    }
+    .social .social-icons i{
+        font-size: 25px;
+    }
+    .social .social-icons{
+        gap: 10px;
+    }
+
+
+
+    .about-me{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .my-profile img{
+        width: 300px;
+    }
+    .about-me .qualification{
+        margin-top: 100px;
+    }
+
+    .contact{
+        width: 600px;
+    }
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 630px){
+
+
+        .light-bulb img{
+            left: 100px;
+            height: 200px;
+        }
+        .light-mode img{
+            left: 159px;
+            top: 156px;
+            width: 75px;
+        }
+
+
+
+        .hero{
+            grid-template-columns: 1fr;
+            /* margin-left: -110px; */
+        }
+        .hero .introduction-txt{
+            margin-top: -40px;
+            margin-right: 20px;
+        }
+        .hero .introduction-txt .my-title{
+            font-size: 50px;
+        }
+        .hero .introduction-txt h1{
+            font-size: 35px;
+        }
+        .hero .introduction-txt p{
+            font-size: 12px;
+            margin-left: 35px;
+        }
+
+        .social{
+            gap: 20px;
+        }
+        .social .social-icons{
+            gap: 5px;
+
+        
+        }
+        .social .download button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90px;
+            height: 25px;
+            font-size: 12px;
+        }
+        .social .download button i{
+            font-size: 15px;
+        }
+        .social .social-icons i{
+            font-size: 20px;
+        }
+
+
+
+        .arrow-down{
+            margin-top: 60px;
+        }
+
+        .about-me{
+            grid-template-columns: 1fr;
+        }
+        .certification{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .certification .cert-1 img{
+            width: 150px;
+        }
+        .my-profile img{
+            margin-top: 70px;
+            width: 250px;
+        }
+
+
+        .contact{
+            width: 290px;
+            gap: 40px;
+            padding: 20px;
+        }
+        .contact input{
+            width: 100px;
+        }
+
+        .contact-right textarea{
+            padding-right: 10px;
+            width: 110px;
+            padding-left: 0px;
+        }
+
+
+
+        .contact-right .social-icons{
+            margin: 0;
+            padding: 0;
+            width: 90px;
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
