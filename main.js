@@ -8,7 +8,7 @@ const menuBtn = document.querySelector("#open-nav");
 const closeBtn = document.querySelector("#close-nav");
 
 
-menu.style.display = "none";
+// menu.style.display = "none";
 
 
 menuBtn.addEventListener('click', () =>{

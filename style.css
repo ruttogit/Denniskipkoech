@@ -37,10 +37,11 @@ nav .button-nav button i{
 }
 
 
+
 nav{
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-right: 30px;
     margin-left: 30px;
     padding-right: 50px;
@@ -57,6 +58,7 @@ nav ul{
     justify-content:space-evenly;
     column-gap: 20px;
     list-style-type: none;
+
 }
 nav a{
     color: #ffffff;
@@ -85,7 +87,7 @@ nav a:hover{
 .light-mode img{
     position: absolute;
     left: 469px;
-    top: 250px;
+    top: 287px;
 }
 
 .introduction-txt span{

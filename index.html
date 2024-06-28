@@ -32,21 +32,24 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
-   <div class="main-nav">
-    <nav>
-        <a id="logo" href="">DENNIS</a>
-        <ul class="nav-menu">
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">PROJECTS</a></li>
-            <li><a href="">CONTACT</a></li>
-        </ul>
-        <div class="button-nav">
-            <button id="open-nav"><i class="uil uil-list-ul"></i></button>
-            <button id="close-nav"><i class="uil uil-multiply"></i></button>
-        </div>
-    </nav>
-   </div>
+    <section id="nav">
+        <div class="main-nav">
+            <nav>
+                <a id="logo" href="">DENNIS</a>
+                <ul class="nav-menu">
+                    <li><a href="home">HOME</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="projects">PROJECTS</a></li>
+                    <li><a href="contact">CONTACT</a></li>
+                </ul>
+                <div class="button-nav">
+                    <button id="open-nav"><i class="uil uil-list-ul"></i></button>
+                    <button id="close-nav"><i class="uil uil-multiply"></i></button>
+                </div>
+            </nav>
+           </div>
+    </section>
+  
    <div class="light">
     <div class="light-bulb">
         <img src="images/light bulb.svg" alt="">
@@ -56,8 +59,8 @@
     </div>
    </div>
    
-   
-   <div class="hero">
+   <section id="home">
+    <div class="hero">
         <div class="blended-background" class="profile-img-1">
             <img src="images/profile-img-1.png" alt="">
         </div>
@@ -86,12 +89,14 @@
         </div>
 
    </div>
+   </section>
+   
    <div class="arrow-down">
     <img src="icons-img/arrow-down.svg" alt="">
    </div>
 
 
-<section class="about">
+<section id="about" class="about">
     <div class="about-me" >
         <div class="certification">
             <div class="cert">
@@ -163,35 +168,37 @@
 
 
 
-
-
-<form action="">
-    <div class="contact-div">
-        <div class="contact" id="fancy-borders">
-            <div class="contact-left">
-                <label for="fname">FIRST NAME:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="fname">LAST NAME:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">EMAIL ID:</label><br>
-                <input type="text" id="lname" name="lname">
-                <input type="submit">
-            </div>
-            
-            <div class="contact-right">
-                <label for="message">Message:</label><br>
-                <textarea name="message" id="message" cols="26" rows="6" placeholder="Message" required></textarea>
-                <div class="social-icons">
-                    <i class="uil uil-instagram"></i>
-                    <i class="uil uil-linkedin-alt"></i>
-                    <i class="uil uil-github-alt"></i>
-                    <i class="uil uil-envelope-add"></i>
+<section id="contact">
+    <form action="">
+        <div class="contact-div">
+            <div class="contact" id="fancy-borders">
+                <div class="contact-left">
+                    <label for="fname">FIRST NAME:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="fname">LAST NAME:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">EMAIL ID:</label><br>
+                    <input type="text" id="lname" name="lname">
+                    <input type="submit">
+                </div>
+                
+                <div class="contact-right">
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="message" cols="26" rows="6" placeholder="Message" required></textarea>
+                    <div class="social-icons">
+                        <i class="uil uil-instagram"></i>
+                        <i class="uil uil-linkedin-alt"></i>
+                        <i class="uil uil-github-alt"></i>
+                        <i class="uil uil-envelope-add"></i>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-</form>
+        
+    </form>
+</section>
+
+
 
 
 <footer>
