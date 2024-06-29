@@ -33,18 +33,28 @@ nav .button-nav button i{
 
 .main-nav{
     width: 100%;
-    box-shadow: 0 -8px 26.2px #B336FF;
+    background: #000000;
+   
+    
 }
 
 
 
 nav{
+    z-index: 250;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 30px;
-    margin-left: 30px;
-    padding-right: 50px;
+    padding-left: 50px;
+    box-shadow: 0 -8px 26.2px #B336FF;
+    background: #000000;
+    
+
 }
 
 #logo{
@@ -55,10 +65,9 @@ nav{
 nav ul{
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
-    column-gap: 20px;
+    justify-content: right;
+    column-gap: 40px;
     list-style-type: none;
-
 }
 nav a{
     color: #ffffff;
@@ -87,7 +96,7 @@ nav a:hover{
 .light-mode img{
     position: absolute;
     left: 469px;
-    top: 287px;
+    top: 220px;
 }
 
 .introduction-txt span{
@@ -179,11 +188,13 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.5s;
+    
 
 }
-
-.arrow-down:hover{
+.arrow-down img{
+    transition: 0.5s;
+}
+.arrow-down img:hover{
     transform: scaleY(2);
     
 }
@@ -206,12 +217,60 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+}
+.next, .prev{
+    transition: 0.7s;
 }
 
-.cert-1 img{
+.next:hover, .prev:hover{
+    border-radius: 50%;
+    width: 50px;
+    box-shadow: 1px 2px 25px #B336FF;
+    
+
+}
+
+.slide {
+    display: none;
+  }
+.slide img{
     width: 250px;
 }
-.about-me .certification .skills .circle{
+
+  /* .prev, .next {
+    position: absolute;
+} */
+
+.c img{
+    width: 700px;
+}
+/* circle{
+    
+} */
+
+
+.circle-container {
+    position: relative;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid ;
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.main-circle {
     height: 100px;
     width: 100px;
     background: transparent;
@@ -222,6 +281,60 @@ nav a:hover{
     align-items: center;
     justify-content: center;
 }
+
+.small-circle {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.small-circle i{
+    font-size: 40px;
+}
+.small-circle img{
+    width: 40px;
+}
+
+#circle1 { top: 10px; left: -20px; }
+#circle2 { top: 280px; left: 120px; }
+#circle3 { top: 120px; left: -120px; }
+#circle4 { top: 100px; left: 120px; }
+#circle5 { top: 300px; left: -100px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .about{
@@ -281,6 +394,37 @@ nav a:hover{
     width: 100%;
 }
 
+#car {
+    position: absolute;
+    /* top: 50%;
+    left: 0; */
+    width: 100px; /* Adjust size as needed */
+    animation: moveCar 6s linear infinite;
+}
+
+
+@keyframes moveCar {
+    0% {
+        left: 100;
+    }
+    50% {
+        left: calc(100% - 100px); /* Adjust distance to move */
+    }
+    100% {
+        left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 .contact-div{
     display: flex;
     align-items: center;
@@ -291,11 +435,12 @@ nav a:hover{
 
 .contact{
     padding-left: 70px;
+    padding: 70px;
     margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 720px;
-    height: 450px;
+    /* height: 700px; */
     align-items: center;
     justify-content: center;       
     text-align: left;
@@ -313,7 +458,7 @@ nav a:hover{
 }
 
 
-.contact-left input[type="submit"]{
+ input[type="submit"]{
     display: block;
     margin-bottom: 0;
     color: #ffffff;
@@ -356,8 +501,17 @@ nav a:hover{
     font-weight: 500;
 }
 
+#submit-2{
+    display: none;
+}
+
 
 footer{
+    width: 100wv;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -394,7 +548,10 @@ footer img{
 
 @media screen and (max-width: 1065px){
 
+
     nav .button-nav button{
+        position: relative;
+        right: 100px;
         display: inline-block;
         cursor: pointer;
         background: transparent;
@@ -414,7 +571,7 @@ footer img{
         display: none;
         position: fixed;
         flex-direction: row;
-        top: 2.5rem;
+        top: 1.5rem;
         right: 2%;
         height: fit-content;
         width: 25rem;
@@ -441,7 +598,7 @@ footer img{
     }
     .light-mode img{
         left: 260px;
-        top: 220px;
+        top: 180px;
     }
 c
 
@@ -483,16 +640,34 @@ c
     .about-me{
         grid-template-columns: 1fr 1fr;
     }
+    .certification{
+        height: 100vw;
+    }
+
+    .slide img{
+        width: 250px;
+    }
+    
+    .my-profile{
+        margin-top: 100px;
+    }
 
     .my-profile img{
+        
         width: 300px;
     }
     .about-me .qualification{
-        margin-top: 100px;
+        margin-top: 500px;
     }
 
     .contact{
         width: 600px;
+        padding: 50px;
+    }
+
+    #submit-2{
+        display: none;
+        
     }
 
 
@@ -505,14 +680,24 @@ c
     @media screen and (max-width: 630px){
 
 
+        nav .button-nav button{
+            position: relative;
+            right: 70px;
+        }
+
+
         .light-bulb img{
             left: 100px;
             height: 200px;
         }
         .light-mode img{
             left: 159px;
-            top: 156px;
+            top: 120px;
             width: 75px;
+        }
+
+        .nav-menu{
+            width: 20rem;
         }
 
 
@@ -520,24 +705,35 @@ c
         .hero{
             grid-template-columns: 1fr;
             /* margin-left: -110px; */
+            margin: 0;
+        }
+
+        .hero .blended-background img{
+            width: 400px;
         }
         .hero .introduction-txt{
-            margin-top: -40px;
-            margin-right: 20px;
+            margin-top: -60px;
+            margin: 0;
+            padding: 0;
         }
         .hero .introduction-txt .my-title{
             font-size: 50px;
         }
         .hero .introduction-txt h1{
+            text-align: center;
             font-size: 35px;
         }
         .hero .introduction-txt p{
             font-size: 12px;
-            margin-left: 35px;
+            text-align: center;
+            padding: 10px 50px 20px;
+            margin: 0;
+            /* padding: 0; */
         }
 
         .social{
             gap: 20px;
+            justify-content: center;
         }
         .social .social-icons{
             gap: 5px;
@@ -573,8 +769,12 @@ c
             align-items: center;
             justify-content: center;
         }
-        .certification .cert-1 img{
-            width: 150px;
+        .certification .slide img{
+            width: 300px;
+        }
+
+        .my-profile{
+            margin-top: 300px;
         }
         .my-profile img{
             margin-top: 70px;
@@ -585,15 +785,39 @@ c
         .contact{
             width: 290px;
             gap: 40px;
-            padding: 20px;
+            padding: 50px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            text-align: left;
+            
         }
+        /* .contact-div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        } */
+
+        
         .contact input{
-            width: 100px;
+            width: 100wv;
+        }
+
+        #submit-1{
+            display: none;
+            margin: 20px 0 20px 0;
+        }
+
+        #submit-2{
+            display: flex;
+            margin: 20px 0 20px 0;
         }
 
         .contact-right textarea{
             padding-right: 10px;
-            width: 110px;
+            width: 170px;
             padding-left: 0px;
         }
 

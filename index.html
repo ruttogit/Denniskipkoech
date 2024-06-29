@@ -92,7 +92,7 @@
    </section>
    
    <div class="arrow-down">
-    <img src="icons-img/arrow-down.svg" alt="">
+    <img id="scrollToBottom" onclick="scrollToBottom()" src="icons-img/arrow-down.svg" alt="">
    </div>
 
 
@@ -100,20 +100,24 @@
     <div class="about-me" >
         <div class="certification">
             <div class="cert">
-                <img class="scroll-btn" id="backBtn" src="images/Left Certi.svg" alt="">
-                <div class="cert-1">
+                <img class="prev" onclick="plusSlides(-1)" src="images/Left Certi.svg" alt="">
+                <div class="slide">
                     <img src="images/dennisrutto certicication.png" alt="">
                 </div>
-                <!-- <div class="cert-1">
-                    <img src="images/FreecodeCamp Web Design 1.png" alt="">
-                </div> -->
-                <img class="scroll-btn" id="nextBtn" src="images/Right Certi.svg" alt="">
+                <div class="slide">
+                    <img src="images/certificate.png" alt="">
+                </div>
+                <img class="next" onclick="plusSlides(1)" src="images/Right Certi.svg" alt="">
             </div>
             <div class="skills">
-                <div class="circle">
-                    <h2>Skills</h2>
+                <div class="circle-container">
+                    <div class="circle main-circle" id="main-circle">Skills</div>
+                    <div class="circle small-circle" id="circle1"><i class="uil uil-html5"></i></div>
+                    <div class="circle small-circle" id="circle2"><i class="uil uil-css3-simple"></i></i></div>
+                    <div class="circle small-circle" id="circle3"><i class="uil uil-java-script"></i></div>
+                    <div class="circle small-circle" id="circle4"><i class="uil uil-react"></i></div>
+                    <div class="circle small-circle" id="circle5"><img src="images/bootstrap.svg" alt=""></div>
                 </div>
-
             </div>
             
         </div>
@@ -149,14 +153,14 @@
     
 </section>
 <div class="arrow-down">
-    <img src="icons-img/arrow-down.svg" alt="">
+    <img id="scrollToBottom" onclick="scrollToBottom()" src="icons-img/arrow-down.svg" alt="">
 </div>
 
 
 <div class="dividor">
     <div class="divid">
         <img src="images/Flag.svg" alt="">
-        <img src="images/Car.svg" alt="">
+        <img id="car" src="images/Car.svg" alt="">
     </div>
     <div class="line"></div>
 </div>
@@ -179,12 +183,13 @@
                     <input type="text" id="fname" name="fname"><br>
                     <label for="lname">EMAIL ID:</label><br>
                     <input type="text" id="lname" name="lname">
-                    <input type="submit">
+                    <input id="submit-1" type="submit">
                 </div>
                 
                 <div class="contact-right">
                     <label for="message">Message:</label><br>
                     <textarea name="message" id="message" cols="26" rows="6" placeholder="Message" required></textarea>
+                    <input id="submit-2" type="submit">
                     <div class="social-icons">
                         <i class="uil uil-instagram"></i>
                         <i class="uil uil-linkedin-alt"></i>

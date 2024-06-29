@@ -1,23 +1,16 @@
 
 //show and hide menu
 
-
-
 const menu = document.querySelector(".nav-menu");
 const menuBtn = document.querySelector("#open-nav");
 const closeBtn = document.querySelector("#close-nav");
 
-
 // menu.style.display = "none";
-
-
 menuBtn.addEventListener('click', () =>{
     menu.style.display = "flex";
     closeBtn.style.display = "inline-block";
     menuBtn.style.display = "none";
 })
-
-
 // close nav
 const closeNav = () => {
     menu.style.display = "none";
@@ -31,12 +24,7 @@ closeBtn.addEventListener('click', closeNav);
 
 
 
-
-
-
-
-
-
+// typewrite effect
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -95,7 +83,23 @@ window.onload = function() {
 };
 
 
-console.log("come")
+
+
+
+// circle animation
+document.getElementById('main-circle').addEventListener('mouseenter', function() {
+    document.querySelectorAll('.small-circle').forEach(circle => {
+        circle.style.opacity = 1;
+        circle.style.transform = 'scale(1)';
+    });
+});
+
+document.getElementById('main-circle').addEventListener('mouseleave', function() {
+    document.querySelectorAll('.small-circle').forEach(circle => {
+        circle.style.opacity = 0;
+        circle.style.transform = 'scale(0)';
+    });
+});
 
 
 
@@ -104,13 +108,43 @@ console.log("come")
 
 
 
-// Certification slideshow
-let scrollContainner = document.querySelector(".cert-1");
-let backBtn = document.getElementById(".backBtn");
-let nextBtn = document.getElementById(".nextBtn");
+// // Certification slideshow
 
-scrollContainner.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainner.scrollLeft += evt.deltaY
+let slideIndex = 0;
+showSlides(slideIndex);
 
-})
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  const slides = document.getElementsByClassName("slide");
+
+  if (n >= slides.length) {
+    slideIndex = 0;
+  } else if (n < 0) {
+    slideIndex = slides.length - 1;
+  }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex].style.display = "block";
+}
+
+
+
+
+
+// scroll to bottom
+
+function scrollToBottom() {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+    });
+    setTimeout(function() {
+        document.getElementById('scrollToBottom').classList.add('hide');
+    }, 1000); // Adjust timing as needed
+}
