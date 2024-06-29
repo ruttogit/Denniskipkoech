@@ -139,13 +139,14 @@ nav a:hover{
     gap: 40px;
 }
 
-.social .social-icons i{
+.social .social-icons a i{
     background: none;
     border: none;
     border-radius: 50%;
     font-size: 30px;
     width: 30px;
     height: 30px;
+    color: #ffffff;
 }
 .social .social-icons{
     display: flex;
@@ -683,7 +684,7 @@ c
         nav .button-nav button{
             position: relative;
             right: 70px;
-            
+
         }
 
 

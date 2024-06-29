@@ -148,3 +148,33 @@ function scrollToBottom() {
         document.getElementById('scrollToBottom').classList.add('hide');
     }, 1000); // Adjust timing as needed
 }
+
+
+
+
+
+// // clear every field in your form after submitting
+// async function submitForm(event) {
+//     event.preventDefault(); // Prevent the default form submission
+
+//     const form = document.getElementById('myForm');
+//     const formData = new FormData(form);
+
+//     try {
+//         const response = await fetch('YOUR_SERVER_ENDPOINT', {
+//             method: 'POST',
+//             body: formData
+//         });
+
+//         if (response.ok) {
+//             form.reset(); // Clear the form fields only after successful submission
+//         } else {
+//             // Handle errors here
+//             alert('Failed to submit the form.');
+//         }
+//     } catch (error) {
+//         // Handle errors here
+//         console.error('Error:', error);
+//         alert('An error occurred while submitting the form.');
+//     }
+// }

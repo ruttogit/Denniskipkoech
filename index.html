@@ -73,13 +73,13 @@
                 <p class="hero-text">I am a passionate and motivated Front-End Developer with one year of experience in creating dynamic and responsive web applications. My journey in web development has been fueled by a commitment to continuous learning and a desire to bring creative ideas to life through code.</p>
                 <div class="social">
                     <div class="download">
-                        <button>RESUME<i class="uil uil-cloud-download"></i></button>
+                        <a href="resume/Data Annotation - 2 - Resume.pdf" download=""><button>RESUME<i class="uil uil-cloud-download"></i></button></a>
                     </div>
                     <div class="social-icons">
-                        <i class="uil uil-instagram"></i>
-                        <i class="uil uil-linkedin-alt"></i>
-                        <i class="uil uil-github-alt"></i>
-                        <i class="uil uil-envelope-add"></i>
+                        <a href="#contact"><i class="uil uil-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/dennis-kipkoech-9b3549272/"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="https://github.com/ruttogit/Denniskipkoech.git"><i class="uil uil-github-alt"></i></a>
+                        <a href="https://www.linkedin.com/in/dennis-kipkoech-9b3549272/"><i class="uil uil-envelope-add"></i></a>
                     </div>
                 </div>
                 
@@ -173,16 +173,17 @@
 
 
 <section id="contact">
-    <form action="">
+    <form action="https://api.web3forms.com/submit" method="POST" id="myForm" onsubmit="submitForm(event)">
         <div class="contact-div">
             <div class="contact" id="fancy-borders">
                 <div class="contact-left">
-                    <label for="fname">FIRST NAME:</label><br>
+                    <input type="hidden" name="access_key" value="a62e0d06-cb4d-4b50-9b93-27c30cbb69d9">
+                    <label for="fname" required>FIRST NAME:</label><br>
                     <input type="text" id="fname" name="fname"><br>
-                    <label for="fname">LAST NAME:</label><br>
+                    <label for="lname" optional>LAST NAME:</label><br>
                     <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">EMAIL ID:</label><br>
-                    <input type="text" id="lname" name="lname">
+                    <label for="email">EMAIL ID:</label><br>
+                    <input type="email" id="email" name="email" required>
                     <input id="submit-1" type="submit">
                 </div>
                 
