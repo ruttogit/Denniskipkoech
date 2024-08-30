@@ -580,6 +580,8 @@ footer{
     box-shadow: 1px -2px 25px #ffffff;
     margin-top: 100px;position: relative;
     bottom: 0;
+    font-size: 11px;
+    font-family: sans-serif;
 }
 
 footer img{
