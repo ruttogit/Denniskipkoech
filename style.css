@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
 *{
     margin: o;
     padding: 0;
@@ -11,6 +16,10 @@ body{
     color: #ffffff;
     font-family: "Bebas Neue";
     background: #000;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 nav .button-nav{
@@ -49,6 +58,16 @@ nav{
     padding-left: 50px;
     box-shadow: 0 -8px 26.2px #B336FF;
     background: #000000;
+    animation: toggle-right  0.3s ease;
+}
+
+@keyframes toggle-right{
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 #logo{
@@ -104,13 +123,12 @@ nav a:hover{
 .hero{
     display: grid;
     grid-template-columns: 300px 1fr;
-    /* margin-top: 150px; */
     align-items: center;
 }
 
-.hero img{
+/* .hero img{
     margin-top: 40px;
-}
+} */
 
 .hero .introduction-txt{
     padding-left: 100px;
@@ -618,7 +636,8 @@ footer img{
         background-color: #0e0d0d8f;
         backdrop-filter: blur(7px);
         padding-bottom: 20px;
-        padding: 50px 0;   
+        padding: 50px 0; 
+        animation: toggle-right  0.3s ease;  
     }
 
     .nav-menu li{
@@ -863,7 +882,7 @@ footer img{
         .contact{
             width: 290px;
             gap: 40px;
-            padding: 50px 20px;
+            padding: 30px 15px;
             display: flex;
             align-items: center;
             justify-content: flex-start;
